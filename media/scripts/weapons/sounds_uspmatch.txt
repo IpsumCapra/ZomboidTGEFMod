@@ -1,0 +1,9 @@
+module TGEF {
+  sound USPMatchShoot {
+    category = Item,
+    clip {
+      file = media/sound/USPMatchShoot.ogg,
+      distanceMax = 40,
+    }
+  }
+}
