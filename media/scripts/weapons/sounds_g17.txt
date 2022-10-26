@@ -1,0 +1,49 @@
+module TGEF {
+  sound G17Shoot {
+    category = Item,
+    clip {
+      file = media/sound/Glock17Shoot.ogg,
+      distanceMax = 40,
+    }
+  }
+
+  sound G17Jam {
+    category = Item,
+    clip {
+      file = media/sound/Glock17Jam.ogg,
+      distanceMax = 1,
+    }
+  }
+
+  sound G17Rack {
+    category = Item,
+    clip {
+      file = media/sound/Glock17Rack.ogg,
+      distanceMax = 1,
+    }
+  }
+
+  sound G17InsertAmmoStart {
+    category = Item,
+    clip {
+      file = media/sound/Glock17InsertClip.ogg,
+      distanceMax = 1,
+    }
+  }
+
+  sound G17InsertAmmoStop {
+    category = Item,
+    clip {
+      file = media/sound/Glock17InsertClipClick.ogg,
+      distanceMax = 1,
+    }
+  }
+
+  sound G17EjectAmmoStart {
+    category = Item,
+    clip {
+      file = media/sound/Glock17EjectClip.ogg,
+      distanceMax = 1,
+    }
+  }
+}
