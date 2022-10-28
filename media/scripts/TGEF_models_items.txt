@@ -1,0 +1,113 @@
+module Base
+{
+	model Glock17
+	{
+		mesh = weapons/firearm/glock17,
+
+		attachment world
+		{
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0240 0.0320,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 -0.0160 0.0650,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 -0.0160 0.0650,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
+	model Glock17Clip
+  {
+    mesh = glock17clip,
+  }
+	model USPMatch
+  {
+    mesh = weapons/firearm/uspmatch,
+    attachment world
+    {
+      rotate = 0.0000 0.0000 0.0000,
+    }
+  }
+	model USPMatchClip
+  {
+    mesh = uspmatchclip,
+  }
+	model SPAS12
+	{
+		mesh = weapons/firearm/spas12,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 -0.0350 0.0510,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 -0.0500 0.0200,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
+	model SPAS12FoldedStock
+	{
+		mesh = weapons/firearm/spas12foldedstock,
+		texture = weapons/firearm/spas12,
+
+		attachment world
+		{
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model SPAS12ExtendedStock
+	{
+		mesh = weapons/firearm/spas12extendedstock,
+		texture = weapons/firearm/spas12,
+
+		attachment world
+		{
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model SPAS12Stock
+	{
+		mesh = spas12stock,
+		texture = weapons/firearm/spas12,
+	}
+
+	model ColtSAA
+	{
+		mesh = weapons/firearm/coltsaa,
+
+		attachment world
+		{
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	model 45LCBullets
+	{
+		mesh = 45lcbullets,
+	}
+
+	model 45LCAmmoBox
+	{
+		mesh = 45lcammobox,
+	}
+}

@@ -1,0 +1,58 @@
+module TGEF {
+  recipe Unfold SPAS-12 Stock
+  {
+    SPAS12FoldedStock,
+
+    Result:SPAS12ExtendedStock,
+    OnCreate:TGEF_Recipe.TransferAmmo,
+    Time:10.0,
+  }
+
+  recipe Fold SPAS-12 Stock
+  {
+    SPAS12ExtendedStock,
+
+    Result:SPAS12FoldedStock,
+    OnCreate:TGEF_Recipe.TransferAmmo,
+    Time:10.0,
+  }
+
+  recipe Remove SPAS-12 Stock
+  {
+    SPAS12FoldedStock/SPAS12ExtendedStock,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result:SPAS12,
+    Time:30.0,
+    OnCreate:TGEF_Recipe.RemoveSPAS12Stock,
+  }
+
+  recipe Attach SPAS-12 Stock
+  {
+    SPAS12,
+    SPAS12Stock,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result:SPAS12FoldedStock,
+    Time:30.0,
+    OnCreate:TGEF_Recipe.TransferAmmo,
+  }
+
+  recipe Open Box of .45LC Bullets
+  {
+    Bullets45LCBox,
+
+    Result:Bullets45LC=6,
+    Sound:BoxOfRoundsOpenOne,
+    Time:15.0,
+  }
+
+  recipe Place .45LC Bullets in Box
+  {
+    Bullets45LC=60,
+
+    Result:Bullets45LCBox,
+    Sound:BoxOfRoundsOpenOne,
+    Time:15.0,
+  }
+}

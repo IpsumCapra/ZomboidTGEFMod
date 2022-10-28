@@ -1,0 +1,129 @@
+module Base {
+  item RedDot
+  {
+      DisplayCategory = WeaponPart,
+      Type = WeaponPart,
+      DisplayName = Red Dot,
+      Icon = RedDot,
+      Weight = 0.2,
+      WeightModifier = 0.2,
+      AimingTimeModifier = 5,
+      MountOn = TGEF.Glock17; TGEF.SPAS12; Pistol; Pistol2; Pistol3; Revolver; Revolver_Long; AssaultRifle; AssaultRifle2; HuntingRifle; VarmintRifle,
+      PartType = Scope,
+      Tooltip = Tooltip_RedDot,
+      StaticModel = RedDot,
+      MetalValue = 15,
+      WorldStaticModel = Handgun_RedDotScope_Ground,
+  }
+
+  item GunLight
+  {
+      DisplayCategory = WeaponPart,
+      Type = WeaponPart,
+      DisplayName = Gun Light,
+      Icon = RedDot,
+      Weight = 0.2,
+      WeightModifier = 0.2,
+      AimingTimeModifier = 5,
+      MountOn = TGEF.Glock17; Pistol; Pistol2; Pistol3,
+      PartType = Canon,
+      StaticModel = GunLight,
+      MetalValue = 15,
+      WorldStaticModel = Handgun_Light_Ground,
+  }
+
+  item Laser
+  {
+      DisplayCategory = WeaponPart,
+      Type = WeaponPart,
+      DisplayName = Laser,
+      Icon = HandgunLaser,
+      Weight = 0.2,
+      WeightModifier = 0.2,
+      HitChanceModifier = 5,
+      MountOn = TGEF.Glock17; Pistol; Pistol2; Pistol3; AssaultRifle; AssaultRifle2,
+      PartType = Canon,
+      Tooltip = Tooltip_Laser,
+      MetalValue = 15,
+      WorldStaticModel = Handgun_Laser_Ground,
+  }
+
+  item x2Scope
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x2 Scope,
+        Icon = Scope2x,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MaxRangeModifier = 7,
+        MinRangeModifier = 6,
+        MountOn = TGEF.SPAS12; HuntingRifle; VarmintRifle; AssaultRifle; AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_Scope,
+        MetalValue = 22,
+        WorldStaticModel = Rifle_2XScope_Ground,
+    }
+
+    item x4Scope
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x4 Scope,
+        Icon = Scope4x,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        MaxRangeModifier = 13,
+        MinRangeModifier = 8,
+        MountOn = TGEF.SPAS12; HuntingRifle; VarmintRifle; AssaultRifle; AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_Scope,
+        MetalValue = 22,
+        WorldStaticModel = Rifle_4XScope_Ground,
+    }
+
+    item x8Scope
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x8 Scope,
+        Icon = Scope8x,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MaxRangeModifier = 20,
+        MinRangeModifier = 10,
+        MountOn = TGEF.SPAS12; HuntingRifle; VarmintRifle; AssaultRifle; AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_Scope,
+        MetalValue = 22,
+        WorldStaticModel = Rifle_8XScope_Ground,
+    }
+
+    item AmmoStraps
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Ammo Straps,
+        Icon = AmmoStrap,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        ReloadTimeModifier = -5,
+        MountOn = TGEF.SPAS12; TGEF.SPAS12FoldedStock; TGEF.SPAS12ExtendedStock; HuntingRifle; VarmintRifle; Shotgun,
+        PartType = Sling,
+        Tooltip = Tooltip_AmmoStrap,
+        WorldStaticModel = AmmoStrap_Ground,
+    }
+
+    item Sling
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Sling,
+        Icon = GunSling,
+        Weight = 0.5,
+        WeightModifier = -0.3,
+        MountOn = TGEF.SPAS12; TGEF.SPAS12FoldedStock; TGEF.SPAS12ExtendedStock; HuntingRifle; VarmintRifle; Shotgun,
+        PartType = Sling,
+        Tooltip = Tooltip_Sling,
+    }
+}

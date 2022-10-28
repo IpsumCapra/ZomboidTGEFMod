@@ -1,0 +1,11 @@
+module TGEF {
+  item SPAS12Stock {
+    DisplayCategory = WeaponPart,
+    Weight = 0.3,
+    Type	=	Normal,
+    DisplayName	=   SPAS-12 Stock,
+    Icon	=	spas12stock,
+    MetalValue = 5,
+    WorldStaticModel = SPAS12Stock,
+  }
+}
