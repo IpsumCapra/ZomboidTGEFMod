@@ -1,0 +1,4 @@
+Tooltip_EN = {
+  Tooltip_SPAS12_Folded_Stock = "Has a stock attached. Folded.",
+  Tooltip_SPAS12_Extended_Stock = "Has a stock attached. Extended."
+}
